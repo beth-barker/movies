@@ -8,11 +8,21 @@ function Login() {
 
     const newUser = () => {
         setLogin(false)
+        //post user info to database
+        //get userid
+        //authenticate and sign in user
     }
 
     const returnUser = () => {
         setLogin(true)
+        //post password and username 
+        //get userid 
+        //authenticate to store id in global context for all requests to use
     }
+
+    //logout - reset/clear userid from global 
+
+
 
 
     return (
