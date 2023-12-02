@@ -1,0 +1,16 @@
+.movie-card {
+    border: black 1px solid;
+    width: 250px;
+    height: fit-content;
+    margin: 5px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.poster{
+    height: 50%;
+    width: 40%;
+}
