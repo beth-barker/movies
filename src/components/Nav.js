@@ -1,0 +1,29 @@
+import React from "react";
+import "../styles/nav.css";
+import { NavLink } from "react-router-dom";
+
+function Nav(props) {
+  return (
+    <div className="nav">
+      {window.location.pathname}
+      <div className="links">
+        <NavLink to="/movies">
+          <h1 className="nav-h1">Movies</h1>
+        </NavLink>
+        <NavLink to="/users">
+          <h1 className="nav-h1">Users</h1>
+        </NavLink>
+      </div>
+      <div className="nav-btns">
+        <NavLink to="/">
+          <button className="logout-btn">Log Out</button>
+        </NavLink>
+        <NavLink to="/profile">
+          <button className="prof-btn">BB</button>
+        </NavLink>
+      </div>
+    </div>
+  );
+}
+
+export default Nav;

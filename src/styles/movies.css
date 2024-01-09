@@ -1,0 +1,24 @@
+.movie-card {
+    border: black 3px solid;
+    /* width: 300px;
+    height: 350px; */
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.poster{
+    height: 300px;
+    width: 250px;
+    padding: 3px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}

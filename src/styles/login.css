@@ -1,32 +1,9 @@
 .login{
-    display: flex;
-    justify-content: center;
     width: 100%;
     margin-top: 100px;
 }
 
-.inputs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px black solid;
-    margin: 100px;
-    padding: 20px;
+.login-btn {
+    margin: 5px;
 }
 
-.login-header{
-    margin-bottom: 40px;
-}
-
-.in{
-    margin: 10px;
-    width: 190px;
-}
-
-.btn-login{
-    width: fit-content;
-    margin: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 5px;
-}

@@ -1,0 +1,14 @@
+import React from "react";
+import Nav from "../components/Nav";
+
+function Profile(props) {
+  return (
+    <div>
+      <h1>Profile</h1>
+      <button>Watched</button>
+      <button>Want to Watch</button>
+    </div>
+  );
+}
+
+export default Profile;
