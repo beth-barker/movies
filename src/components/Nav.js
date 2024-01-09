@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 function Nav(props) {
   return (
     <div className="nav">
+      {window.location.pathname}
       <div className="links">
         <NavLink to="/movies">
           <h1 className="nav-h1">Movies</h1>
