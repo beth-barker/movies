@@ -28,6 +28,7 @@ function Genre(props) {
   const handleSelectChange = (event) => {
     setSelectedOption(event.target.value);
     props.onChange(event.target.value);
+    //reset rating and search
   };
 
   return (

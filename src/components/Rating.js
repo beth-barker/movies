@@ -6,6 +6,7 @@ function Rating(props) {
   function handleSelection(selection) {
     setSelectRating(selection.target.value);
     props.onChange(selection.target.value);
+    //reset rating and genre
   }
 
   return (

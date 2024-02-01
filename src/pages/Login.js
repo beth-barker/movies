@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/login.css";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Login() {
   const [login, setLogin] = useState(true);
@@ -25,7 +26,9 @@ function Login() {
     <div className="login">
       <h1>BB Movies</h1>
       <br />
-      <button className="login-btn">Log In</button>
+      <NavLink to="/movies">
+        <button className="login-btn">Log In</button>
+      </NavLink>
       <button className="login-btn">Sign Up</button>
     </div>
   );

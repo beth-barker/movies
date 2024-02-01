@@ -6,6 +6,7 @@ function Search(props) {
   function handleSearch(term) {
     setSearchTerm(term);
     props.onSearch(term);
+    //reset rating and genre
   }
 
   return (

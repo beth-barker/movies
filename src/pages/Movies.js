@@ -39,6 +39,8 @@ function Movies(props) {
     return setMovies(gResults);
   }
 
+  //function resetSearch() {}
+
   return (
     <div>
       <div>
