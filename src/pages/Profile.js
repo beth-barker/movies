@@ -6,6 +6,7 @@ import profileMovie from "../data/profileMovies.json";
 import MovieCard from "../components/MovieCard";
 import { useState, useEffect } from "react";
 import "../styles/movies.css";
+import { NavLink } from "react-router-dom";
 
 function Profile(props) {
   const [profMovie, setProfMovies] = useState(profileMovie);
@@ -44,6 +45,9 @@ function Profile(props) {
 
   return (
     <div>
+      <NavLink to="/movies" className="prof-discover-link">
+        <h2>Discover</h2>
+      </NavLink>
       {watched === "True" ? (
         <h1>Beth's Watched Movies</h1>
       ) : (

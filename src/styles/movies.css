@@ -1,9 +1,11 @@
 .movie-card {
-    border: black 3px solid;
-    /* width: 300px;
-    height: 350px; */
     margin: 15px;
-    border-radius: 5px;
+    width: 200px;
+    border: black solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
 }
 
 .cards {
@@ -12,13 +14,44 @@
 }
 
 .poster{
-    height: 300px;
-    width: 250px;
-    padding: 3px;
+    width: 200px;
+    height: 256px;
+    border-radius: 10px;
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
     margin: 5px;
+}
+
+.poster-view {
+    width: 200px;
+    height: 256px;
+}
+
+.movie-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.movie-facts {
+    display: flex;
+}
+
+.year {
+    margin-right: 10px;
+}
+
+.movie-content {
+    display: flex;
+}
+
+.m-movie-page {
+    display: flex;
+}
+
+.prof-discover-link {
+    color: white;
+    text-decoration: none;
 }

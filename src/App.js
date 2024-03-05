@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      {window.location.pathname === "/" ? null : <Nav />}
+      {/* {window.location.pathname === "/" ? null : <Nav />} */}
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/movies" element={<Movies />} />
