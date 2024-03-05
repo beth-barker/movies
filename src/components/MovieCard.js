@@ -37,14 +37,18 @@ function MovieCard({ movie, index }) {
 
   return (
     <div className="movie-card" key={index}>
-      <p className="movie-title">{movie.Title}</p>
-      <div className="movie-content">
+      <div className="poster-view">
         <img className="poster" src={movie.Poster} alt={movie.Title} />
+      </div>
+      <div className="movie-content">
         <div className="movie-info">
-          <p>{movie.Rated}</p>
-          <p>{movie.Year}</p>
-          <p>{movie.Runtime}</p>
-          <p>{movie.Genre}</p>
+          <p className="movie-title">{movie.Title}</p>
+          <br />
+          <div className="movie-facts">
+            <p className="year">{movie.Year}</p>
+            <p className="year">{movie.Runtime}</p>
+            <p>{movie.Rated}</p>
+          </div>
         </div>
       </div>
       {showBtns()}

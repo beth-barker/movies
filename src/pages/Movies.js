@@ -6,6 +6,7 @@ import movieData from "../data/movies-250.json";
 import Search from "../components/SearchInput";
 import Genre from "../components/Genre";
 import Rating from "../components/Rating";
+import MoviePreviewBar from "../components/MoviePreviewBar";
 
 function Movies(props) {
   let [movies, setMovies] = useState(movieData);
@@ -42,15 +43,21 @@ function Movies(props) {
   //function resetSearch() {}
 
   return (
-    <div>
+    <div className="m-movie-page">
       <div>
-        <h1>Movies</h1>
-        <Search placeholder="Search Movies" onSearch={handleMovieSearch} />
-        <br />
-        <Genre onChange={genreSearch} />
-        <Rating onChange={ratingSearch} />
+        <h2>Discover</h2>
+        <div>
+          <Search placeholder="Search Movies" onSearch={handleMovieSearch} />
+          <br />
+          <Genre onChange={genreSearch} />
+          <Rating onChange={ratingSearch} />
+        </div>
+        <div className="cards">{renderMovies()}</div>
       </div>
-      <div className="cards">{renderMovies()}</div>
+
+      <div>
+        <MoviePreviewBar />
+      </div>
     </div>
   );
 }

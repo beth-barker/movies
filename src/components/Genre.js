@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+import "../styles/filter.css";
 
 function Genre(props) {
   const [selectedOption, setSelectedOption] = useState("");
@@ -33,7 +34,11 @@ function Genre(props) {
 
   return (
     <div>
-      <select value={selectedOption} onChange={handleSelectChange}>
+      <select
+        className="genre-dp"
+        value={selectedOption}
+        onChange={handleSelectChange}
+      >
         <option hidden>Genre</option>
         {genreArr.map((genre, index) => (
           <option key={index}>{genre}</option>
